@@ -13,8 +13,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class TestBasis {
 
-    //WebDriver driver = new ChromeDriver();
-
     @BeforeClass
     public void configsSetup(){
         Configuration.startMaximized = true;
@@ -38,8 +36,4 @@ public class TestBasis {
     public WebDriver getDriver() {
         return WebDriverRunner.getWebDriver();
     }
-
-//    public WebDriver getDriver() {
-//        return driver;
-//    }
 }
